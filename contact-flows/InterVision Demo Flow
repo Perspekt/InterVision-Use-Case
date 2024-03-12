@@ -1,0 +1,1251 @@
+{
+    "Version": "2019-10-30",
+    "StartAction": "b4038ec8-4d1c-449c-8601-107e123de3b9",
+    "Metadata": {
+      "entryPointPosition": {
+        "x": 40,
+        "y": 218.4
+      },
+      "ActionMetadata": {
+        "b4038ec8-4d1c-449c-8601-107e123de3b9": {
+          "position": {
+            "x": 131.2,
+            "y": 194.4
+          }
+        },
+        "e9ff3e3d-c6ba-4693-b570-c45dcf9317b7": {
+          "position": {
+            "x": 117.6,
+            "y": 563.2
+          },
+          "parameters": {
+            "FlowModuleId": {
+              "displayName": "CallBlockingFlow"
+            }
+          },
+          "contactFlowModuleName": "CallBlockingFlow"
+        },
+        "b3b7a4cd-a562-48c1-b595-ef24932a3e9f": {
+          "position": {
+            "x": 121.6,
+            "y": 759.2
+          },
+          "overrideConsoleVoice": false
+        },
+        "2a39d6b5-c17e-4ffc-995e-a36f0316e8ef": {
+          "position": {
+            "x": 130.4,
+            "y": 1148.8
+          },
+          "parameters": {
+            "Attributes": {
+              "Greeting": {
+                "useDynamic": true
+              },
+              "HousingAssistance": {
+                "useDynamic": true
+              },
+              "SupportedPrograms": {
+                "useDynamic": true
+              },
+              "DriversLicense": {
+                "useDynamic": true
+              },
+              "Collections": {
+                "useDynamic": true
+              },
+              "VehicleRegistration": {
+                "useDynamic": true
+              },
+              "Survey": {
+                "useDynamic": true
+              },
+              "Unemployment": {
+                "useDynamic": true
+              },
+              "CustomerSupport": {
+                "useDynamic": true
+              },
+              "CallBack": {
+                "useDynamic": true
+              },
+              "InstanceID": {
+                "useDynamic": true
+              },
+              "ServicesList": {
+                "useDynamic": true
+              },
+              "Billing": {
+                "useDynamic": true
+              },
+              "SupportedOptionsCount": {
+                "useDynamic": true
+              },
+              "DefaultQueue": {
+                "useDynamic": true
+              },
+              "Military": {
+                "useDynamic": true
+              },
+              "Corporate": {
+                "useDynamic": true
+              },
+              "ContactFlowID": {
+                "useDynamic": true
+              },
+              "County": {
+                "useDynamic": true
+              },
+              "GreetingExists": {
+                "useDynamic": true
+              }
+            }
+          },
+          "dynamicParams": [
+            "Greeting",
+            "HousingAssistance",
+            "SupportedPrograms",
+            "DriversLicense",
+            "Collections",
+            "CustomerSupport",
+            "VehicleRegistration",
+            "Survey",
+            "Unemployment",
+            "CallBack",
+            "InstanceID",
+            "ServicesList",
+            "Billing",
+            "SupportedOptionsCount",
+            "DefaultQueue",
+            "Military",
+            "Corporate",
+            "ContactFlowID",
+            "County",
+            "GreetingExists"
+          ]
+        },
+        "908f31dd-3beb-4ac8-91ff-4246176ec34b": {
+          "position": {
+            "x": 1412,
+            "y": 876
+          }
+        },
+        "74b120ac-5e5a-4eeb-9797-9235e5aa4fb2": {
+          "position": {
+            "x": 128,
+            "y": 361.6
+          },
+          "parameters": {
+            "EventHooks": {
+              "AgentWhisper": {
+                "displayName": "StateOfCalifornia - AgentWhisperFlow"
+              }
+            }
+          },
+          "contactFlow": {
+            "text": "StateOfCalifornia - AgentWhisperFlow",
+            "id": ""
+          },
+          "customerOrAgent": false
+        },
+        "6d4abba7-baaf-41e4-ad37-22520ed29301": {
+          "position": {
+            "x": 117.6,
+            "y": 940.8
+          },
+          "parameters": {
+            "LambdaFunctionARN": {
+              "displayName": "ConnectGetCustomerGreeting"
+            }
+          },
+          "dynamicMetadata": {}
+        },
+        "2b586479-72b7-40ac-9abf-50ec4f62bcab": {
+          "position": {
+            "x": 422.4,
+            "y": 835.2
+          },
+          "conditions": [],
+          "conditionMetadata": [
+            {
+              "id": "2f650baf-0c7e-4bd1-9a23-9510ab6857fc",
+              "operator": {
+                "name": "Equals",
+                "value": "Equals",
+                "shortDisplay": "="
+              },
+              "value": "True"
+            },
+            {
+              "id": "c84c3d6f-f2ae-4ffa-a16d-36ba44f29afd",
+              "operator": {
+                "name": "Equals",
+                "value": "Equals",
+                "shortDisplay": "="
+              },
+              "value": "False"
+            }
+          ]
+        },
+        "5f795e10-e227-4fb0-a380-be6860177bca": {
+          "position": {
+            "x": 1903.2,
+            "y": 789.6
+          },
+          "parameters": {
+            "QueueId": {
+              "displayName": "Customer Service"
+            }
+          }
+        },
+        "9e9d0409-c430-4f37-95a2-6d9ecc755971": {
+          "position": {
+            "x": 2233.6,
+            "y": 612
+          },
+          "conditions": [],
+          "conditionMetadata": [
+            {
+              "id": "0fce3d8a-6a90-430c-9284-cf97aa6d883e",
+              "operator": {
+                "name": "Equals",
+                "value": "Equals",
+                "shortDisplay": "="
+              },
+              "value": "arn:aws:connect:us-east-1:123456123456:instance/b45a1a41-1622-4a50-8151-189b1ccb6026/queue/dd2ef3ce-1cf2-4d26-b539-f2917b05b854"
+            }
+          ]
+        },
+        "be10895b-c5d8-4641-9f84-f0179dab1a8b": {
+          "position": {
+            "x": 2194.4,
+            "y": 1222.4
+          }
+        },
+        "acdc2a31-e0c9-40f6-9586-349e816d8d1f": {
+          "position": {
+            "x": 2995.2,
+            "y": 681.6
+          }
+        },
+        "a9305c20-a2b8-4379-95ae-c4556f46260d": {
+          "position": {
+            "x": 3479.2,
+            "y": 333.6
+          }
+        },
+        "31c33c09-04bc-4f0a-b260-84ef1f6e3251": {
+          "position": {
+            "x": 3712.8,
+            "y": 348.8
+          }
+        },
+        "f57db1a8-ddb2-40d6-ae1b-27aad494f789": {
+          "position": {
+            "x": 3202.4,
+            "y": 212.8
+          },
+          "conditionMetadata": [
+            {
+              "id": "e04b0f80-8ec1-45b6-8e64-496d05abf8df",
+              "value": "1"
+            }
+          ]
+        },
+        "9eeddff1-d896-4c7e-bb75-b07a8a91e235": {
+          "position": {
+            "x": 4164,
+            "y": 507.2
+          }
+        },
+        "945c6ce3-7bda-4f47-879f-e23521a5bae9": {
+          "position": {
+            "x": 3934.4,
+            "y": 256
+          },
+          "parameters": {
+            "ContactFlowId": {
+              "displayName": "StateOfCalifornia - NewVoicemail"
+            }
+          },
+          "ContactFlow": {
+            "text": "StateOfCalifornia - NewVoicemail"
+          }
+        },
+        "49983cfb-32f1-4719-91fa-7622248468b6": {
+          "position": {
+            "x": 2952,
+            "y": 232.8
+          }
+        },
+        "5c8b09f9-c878-4bb8-878c-cbf163435cb2": {
+          "position": {
+            "x": 2508.8,
+            "y": 556
+          },
+          "parameters": {
+            "LambdaFunctionARN": {
+              "displayName": "CheckHolidayCS"
+            }
+          },
+          "dynamicMetadata": {}
+        },
+        "5fe976bc-7872-4915-8f1f-c29f65c4f366": {
+          "position": {
+            "x": 2724.8,
+            "y": 524
+          },
+          "conditions": [],
+          "conditionMetadata": [
+            {
+              "id": "f480b586-e9c3-43ed-bec0-8dcefc31375b",
+              "operator": {
+                "name": "Equals",
+                "value": "Equals",
+                "shortDisplay": "="
+              },
+              "value": "Yes"
+            },
+            {
+              "id": "217c8b56-19b3-448d-a229-960241cb123d",
+              "operator": {
+                "name": "Equals",
+                "value": "Equals",
+                "shortDisplay": "="
+              },
+              "value": "No"
+            }
+          ]
+        },
+        "db828b48-9f5d-45b1-a1c3-31e6bda37283": {
+          "position": {
+            "x": 2721.6,
+            "y": 736.8
+          },
+          "conditions": [],
+          "conditionMetadata": [
+            {
+              "id": "5cc870a3-7154-4640-bbef-eed05f27b595",
+              "operator": {
+                "name": "Equals",
+                "value": "Equals",
+                "shortDisplay": "="
+              },
+              "value": "Yes"
+            },
+            {
+              "id": "96e7ecc1-5153-40f8-81cd-94161d3013cc",
+              "operator": {
+                "name": "Equals",
+                "value": "Equals",
+                "shortDisplay": "="
+              },
+              "value": "No"
+            }
+          ]
+        },
+        "b4276ea9-f8c3-41f9-9b26-f1448aa949ca": {
+          "position": {
+            "x": 2512.8,
+            "y": 762.4
+          },
+          "parameters": {
+            "LambdaFunctionARN": {
+              "displayName": "CheckHoliday"
+            }
+          },
+          "dynamicMetadata": {}
+        },
+        "442c00cc-30c6-48df-922d-9aab60c73eaf": {
+          "position": {
+            "x": 3232.8,
+            "y": 644
+          },
+          "parameters": {
+            "Attributes": {
+              "DialedNumber": {
+                "useDynamic": true
+              }
+            }
+          },
+          "dynamicParams": [
+            "DialedNumber"
+          ]
+        },
+        "58bcceb9-ca11-46ce-bdc8-08df6875b4fb": {
+          "position": {
+            "x": 3540.8,
+            "y": 699.2
+          },
+          "parameters": {
+            "ContactFlowId": {
+              "displayName": "StateOfCalifornia - Pre-Queue Treatment"
+            }
+          },
+          "ContactFlow": {
+            "text": "StateOfCalifornia - Pre-Queue Treatment"
+          }
+        },
+        "4cb34865-c948-4208-80e8-dc525d121435": {
+          "position": {
+            "x": 1903.2,
+            "y": 576.8
+          },
+          "parameters": {
+            "QueueId": {
+              "useDynamic": true
+            }
+          },
+          "useDynamic": true
+        },
+        "6b495c89-77d4-4072-8ed4-c914412f4fea": {
+          "position": {
+            "x": 881.6,
+            "y": 1146.4
+          }
+        },
+        "1ddbe9eb-3845-4d99-84b2-25e0be7fd172": {
+          "position": {
+            "x": 1903.2,
+            "y": 378.4
+          },
+          "parameters": {
+            "QueueId": {
+              "useDynamic": true
+            }
+          },
+          "useDynamic": true
+        },
+        "78a2c397-b3b3-48eb-99dc-b0e77271d6b3": {
+          "position": {
+            "x": 750.4,
+            "y": 551.2
+          },
+          "parameters": {
+            "Text": {
+              "useDynamic": true
+            }
+          },
+          "useDynamic": true
+        },
+        "f6005149-232d-497a-b3dc-be680b8c43c5": {
+          "position": {
+            "x": 1607.2,
+            "y": 567.2
+          },
+          "parameters": {
+            "Attributes": {
+              "QueueName": {
+                "useDynamic": true
+              },
+              "QueueARN": {
+                "useDynamic": true
+              },
+              "DialedNumber": {
+                "useDynamic": true
+              }
+            }
+          },
+          "dynamicParams": [
+            "QueueName",
+            "QueueARN",
+            "DialedNumber"
+          ]
+        },
+        "a22b12b8-e762-42cf-88e7-f888c6f36ca6": {
+          "position": {
+            "x": 1104.8,
+            "y": 800
+          }
+        },
+        "9ea6d0d2-82eb-480f-8dc8-effbcd5a8805": {
+          "position": {
+            "x": 1132,
+            "y": 335.2
+          },
+          "conditions": [],
+          "conditionMetadata": [
+            {
+              "id": "64bd3956-caf1-4693-9150-a22fd2b6f1c8",
+              "operator": {
+                "name": "Equals",
+                "value": "Equals",
+                "shortDisplay": "="
+              },
+              "value": "1"
+            }
+          ]
+        },
+        "18641d20-f8e7-4339-92eb-987b40267596": {
+          "position": {
+            "x": 1333.6,
+            "y": 521.6
+          },
+          "parameters": {
+            "SSML": {
+              "useDynamic": true
+            },
+            "LexSessionAttributes": {
+              "CustomerSupport": {
+                "useDynamic": true
+              },
+              "InstanceID": {
+                "useDynamic": true
+              },
+              "Corporate": {
+                "useDynamic": true
+              },
+              "VehicleRegistration": {
+                "useDynamic": true
+              },
+              "SupportedPrograms": {
+                "useDynamic": true
+              },
+              "DialedNumber": {
+                "useDynamic": true
+              },
+              "Unemployment": {
+                "useDynamic": true
+              },
+              "ServicesList": {
+                "useDynamic": true
+              },
+              "Billing": {
+                "useDynamic": true
+              },
+              "HousingAssistance": {
+                "useDynamic": true
+              },
+              "DriversLicense": {
+                "useDynamic": true
+              },
+              "Collections": {
+                "useDynamic": true
+              },
+              "Military": {
+                "useDynamic": true
+              }
+            }
+          },
+          "dynamicMetadata": {
+            "CustomerSupport": true,
+            "InstanceID": true,
+            "Corporate": true,
+            "VehicleRegistration": true,
+            "SupportedPrograms": true,
+            "DialedNumber": true,
+            "Unemployment": true,
+            "ServicesList": true,
+            "Billing": true,
+            "HousingAssistance": true,
+            "DriversLicense": true,
+            "Collections": true,
+            "Military": true
+          },
+          "useLexBotDropdown": true,
+          "useDynamic": true,
+          "conditionMetadata": []
+        }
+      },
+      "Annotations": [],
+      "name": "InterVision Demo Flow",
+      "description": "",
+      "type": "contactFlow",
+      "status": "saved",
+      "hash": {}
+    },
+    "Actions": [
+      {
+        "Parameters": {
+          "FlowLoggingBehavior": "Enabled"
+        },
+        "Identifier": "b4038ec8-4d1c-449c-8601-107e123de3b9",
+        "Type": "UpdateFlowLoggingBehavior",
+        "Transitions": {
+          "NextAction": "74b120ac-5e5a-4eeb-9797-9235e5aa4fb2"
+        }
+      },
+      {
+        "Parameters": {
+          "FlowModuleId": ""
+        },
+        "Identifier": "e9ff3e3d-c6ba-4693-b570-c45dcf9317b7",
+        "Type": "InvokeFlowModule",
+        "Transitions": {
+          "NextAction": "b3b7a4cd-a562-48c1-b595-ef24932a3e9f",
+          "Errors": [
+            {
+              "NextAction": "b3b7a4cd-a562-48c1-b595-ef24932a3e9f",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "TextToSpeechVoice": "Matthew"
+        },
+        "Identifier": "b3b7a4cd-a562-48c1-b595-ef24932a3e9f",
+        "Type": "UpdateContactTextToSpeechVoice",
+        "Transitions": {
+          "NextAction": "6d4abba7-baaf-41e4-ad37-22520ed29301"
+        }
+      },
+      {
+        "Parameters": {
+          "Attributes": {
+            "Greeting": "$.External.Greeting",
+            "HousingAssistance": "$.External.HousingAssistance",
+            "SupportedPrograms": "$.External.SupportedPrograms",
+            "DriversLicense": "$.External.DriversLicense",
+            "Collections": "$.External.Collections",
+            "CustomerSupport": "$.External.CustomerSupport",
+            "VehicleRegistration": "$.External.VehicleRegistration",
+            "Survey": "$.External.Survey",
+            "Unemployment": "$.External.Unemployment",
+            "CallBack": "$.External.CallBack",
+            "InstanceID": "$.InstanceARN",
+            "ServicesList": "$.External.ServicesList",
+            "Billing": "$.External.Billing",
+            "SupportedOptionsCount": "$.External.SupportedOptionsCount",
+            "DefaultQueue": "$.External.DefaultQueue",
+            "Military": "$.External.Military",
+            "Corporate": "$.External.Corporate",
+            "ContactFlowID": "$.ContactId",
+            "County": "$.External.County",
+            "GreetingExists": "$.External.GreetingExists"
+          },
+          "TargetContact": "Current"
+        },
+        "Identifier": "2a39d6b5-c17e-4ffc-995e-a36f0316e8ef",
+        "Type": "UpdateContactAttributes",
+        "Transitions": {
+          "NextAction": "2b586479-72b7-40ac-9abf-50ec4f62bcab",
+          "Errors": [
+            {
+              "NextAction": "2b586479-72b7-40ac-9abf-50ec4f62bcab",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "Text": "Thank you for calling StateOfCalifornia on behalf of $.Attributes.County. Please call back again at your earliest convenience."
+        },
+        "Identifier": "908f31dd-3beb-4ac8-91ff-4246176ec34b",
+        "Type": "MessageParticipant",
+        "Transitions": {
+          "NextAction": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+          "Errors": [
+            {
+              "NextAction": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "EventHooks": {
+            "AgentWhisper": ""
+          }
+        },
+        "Identifier": "74b120ac-5e5a-4eeb-9797-9235e5aa4fb2",
+        "Type": "UpdateContactEventHooks",
+        "Transitions": {
+          "NextAction": "e9ff3e3d-c6ba-4693-b570-c45dcf9317b7",
+          "Errors": [
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "LambdaFunctionARN": "arn:aws:lambda:us-east-1:123456123456:function:ConnectGetCustomerGreeting",
+          "InvocationTimeLimitSeconds": "8",
+          "ResponseValidation": {
+            "ResponseType": "STRING_MAP"
+          }
+        },
+        "Identifier": "6d4abba7-baaf-41e4-ad37-22520ed29301",
+        "Type": "InvokeLambdaFunction",
+        "Transitions": {
+          "NextAction": "2a39d6b5-c17e-4ffc-995e-a36f0316e8ef",
+          "Errors": [
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "ComparisonValue": "$.External.GreetingExists"
+        },
+        "Identifier": "2b586479-72b7-40ac-9abf-50ec4f62bcab",
+        "Type": "Compare",
+        "Transitions": {
+          "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+          "Conditions": [
+            {
+              "NextAction": "78a2c397-b3b3-48eb-99dc-b0e77271d6b3",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "True"
+                ]
+              }
+            },
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "False"
+                ]
+              }
+            }
+          ],
+          "Errors": [
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "ErrorType": "NoMatchingCondition"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "QueueId": ""
+        },
+        "Identifier": "5f795e10-e227-4fb0-a380-be6860177bca",
+        "Type": "UpdateContactTargetQueue",
+        "Transitions": {
+          "NextAction": "9e9d0409-c430-4f37-95a2-6d9ecc755971",
+          "Errors": [
+            {
+              "NextAction": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "ComparisonValue": "$.Queue.ARN"
+        },
+        "Identifier": "9e9d0409-c430-4f37-95a2-6d9ecc755971",
+        "Type": "Compare",
+        "Transitions": {
+          "NextAction": "b4276ea9-f8c3-41f9-9b26-f1448aa949ca",
+          "Conditions": [
+            {
+              "NextAction": "5c8b09f9-c878-4bb8-878c-cbf163435cb2",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "arn:aws:connect:us-east-1:123456123456:instance/b45a1a41-1622-4a50-8151-189b1ccb6026/queue/dd2ef3ce-1cf2-4d26-b539-f2917b05b854"
+                ]
+              }
+            }
+          ],
+          "Errors": [
+            {
+              "NextAction": "b4276ea9-f8c3-41f9-9b26-f1448aa949ca",
+              "ErrorType": "NoMatchingCondition"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {},
+        "Identifier": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+        "Type": "DisconnectParticipant",
+        "Transitions": {}
+      },
+      {
+        "Parameters": {
+          "RecordingBehavior": {
+            "RecordedParticipants": [
+              "Agent",
+              "Customer"
+            ]
+          },
+          "AnalyticsBehavior": {
+            "Enabled": "True",
+            "AnalyticsLanguage": "en-US",
+            "AnalyticsRedactionBehavior": "Enabled",
+            "AnalyticsRedactionResults": "RedactedOnly",
+            "AnalyticsRedactionMaskMode": "PII",
+            "ChannelConfiguration": {
+              "Chat": {
+                "AnalyticsModes": []
+              },
+              "Voice": {
+                "AnalyticsModes": [
+                  "PostContact"
+                ]
+              }
+            }
+          }
+        },
+        "Identifier": "acdc2a31-e0c9-40f6-9586-349e816d8d1f",
+        "Type": "UpdateContactRecordingBehavior",
+        "Transitions": {
+          "NextAction": "442c00cc-30c6-48df-922d-9aab60c73eaf"
+        }
+      },
+      {
+        "Parameters": {
+          "LoopCount": "2"
+        },
+        "Identifier": "a9305c20-a2b8-4379-95ae-c4556f46260d",
+        "Type": "Loop",
+        "Transitions": {
+          "NextAction": "31c33c09-04bc-4f0a-b260-84ef1f6e3251",
+          "Conditions": [
+            {
+              "NextAction": "f57db1a8-ddb2-40d6-ae1b-27aad494f789",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "ContinueLooping"
+                ]
+              }
+            },
+            {
+              "NextAction": "31c33c09-04bc-4f0a-b260-84ef1f6e3251",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "DoneLooping"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "Text": "Thank you for calling StateOfCalifornia on behalf of $.Attributes.County"
+        },
+        "Identifier": "31c33c09-04bc-4f0a-b260-84ef1f6e3251",
+        "Type": "MessageParticipant",
+        "Transitions": {
+          "NextAction": "9eeddff1-d896-4c7e-bb75-b07a8a91e235",
+          "Errors": [
+            {
+              "NextAction": "9eeddff1-d896-4c7e-bb75-b07a8a91e235",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "Text": "Please press 1 if you would like to leave a voicemail. Otherwise you can hang up at any time and call us back during our next business day.",
+          "StoreInput": "False",
+          "InputTimeLimitSeconds": "5"
+        },
+        "Identifier": "f57db1a8-ddb2-40d6-ae1b-27aad494f789",
+        "Type": "GetParticipantInput",
+        "Transitions": {
+          "NextAction": "a9305c20-a2b8-4379-95ae-c4556f46260d",
+          "Conditions": [
+            {
+              "NextAction": "945c6ce3-7bda-4f47-879f-e23521a5bae9",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "1"
+                ]
+              }
+            }
+          ],
+          "Errors": [
+            {
+              "NextAction": "a9305c20-a2b8-4379-95ae-c4556f46260d",
+              "ErrorType": "InputTimeLimitExceeded"
+            },
+            {
+              "NextAction": "a9305c20-a2b8-4379-95ae-c4556f46260d",
+              "ErrorType": "NoMatchingCondition"
+            },
+            {
+              "NextAction": "9eeddff1-d896-4c7e-bb75-b07a8a91e235",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {},
+        "Identifier": "9eeddff1-d896-4c7e-bb75-b07a8a91e235",
+        "Type": "DisconnectParticipant",
+        "Transitions": {}
+      },
+      {
+        "Parameters": {
+          "ContactFlowId": ""
+        },
+        "Identifier": "945c6ce3-7bda-4f47-879f-e23521a5bae9",
+        "Type": "TransferToFlow",
+        "Transitions": {
+          "NextAction": "9eeddff1-d896-4c7e-bb75-b07a8a91e235",
+          "Errors": [
+            {
+              "NextAction": "9eeddff1-d896-4c7e-bb75-b07a8a91e235",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "Text": "Thank you for calling StateOfCalifornia on behalf of $.Attributes.County. Our offices are currently closed do to the Holiday. "
+        },
+        "Identifier": "49983cfb-32f1-4719-91fa-7622248468b6",
+        "Type": "MessageParticipant",
+        "Transitions": {
+          "NextAction": "f57db1a8-ddb2-40d6-ae1b-27aad494f789",
+          "Errors": [
+            {
+              "NextAction": "9eeddff1-d896-4c7e-bb75-b07a8a91e235",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "LambdaFunctionARN": "arn:aws:lambda:us-east-1:123456123456:function:CheckHolidayCS",
+          "InvocationTimeLimitSeconds": "8",
+          "ResponseValidation": {
+            "ResponseType": "STRING_MAP"
+          }
+        },
+        "Identifier": "5c8b09f9-c878-4bb8-878c-cbf163435cb2",
+        "Type": "InvokeLambdaFunction",
+        "Transitions": {
+          "NextAction": "5fe976bc-7872-4915-8f1f-c29f65c4f366",
+          "Errors": [
+            {
+              "NextAction": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "ComparisonValue": "$.External.CLOSED"
+        },
+        "Identifier": "5fe976bc-7872-4915-8f1f-c29f65c4f366",
+        "Type": "Compare",
+        "Transitions": {
+          "NextAction": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+          "Conditions": [
+            {
+              "NextAction": "49983cfb-32f1-4719-91fa-7622248468b6",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "Yes"
+                ]
+              }
+            },
+            {
+              "NextAction": "acdc2a31-e0c9-40f6-9586-349e816d8d1f",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "No"
+                ]
+              }
+            }
+          ],
+          "Errors": [
+            {
+              "NextAction": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+              "ErrorType": "NoMatchingCondition"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "ComparisonValue": "$.External.CLOSED"
+        },
+        "Identifier": "db828b48-9f5d-45b1-a1c3-31e6bda37283",
+        "Type": "Compare",
+        "Transitions": {
+          "NextAction": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+          "Conditions": [
+            {
+              "NextAction": "49983cfb-32f1-4719-91fa-7622248468b6",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "Yes"
+                ]
+              }
+            },
+            {
+              "NextAction": "acdc2a31-e0c9-40f6-9586-349e816d8d1f",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "No"
+                ]
+              }
+            }
+          ],
+          "Errors": [
+            {
+              "NextAction": "be10895b-c5d8-4641-9f84-f0179dab1a8b",
+              "ErrorType": "NoMatchingCondition"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "LambdaFunctionARN": "arn:aws:lambda:us-east-1:123456123456:function:CheckHoliday",
+          "InvocationTimeLimitSeconds": "8",
+          "ResponseValidation": {
+            "ResponseType": "STRING_MAP"
+          }
+        },
+        "Identifier": "b4276ea9-f8c3-41f9-9b26-f1448aa949ca",
+        "Type": "InvokeLambdaFunction",
+        "Transitions": {
+          "NextAction": "db828b48-9f5d-45b1-a1c3-31e6bda37283",
+          "Errors": [
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "Attributes": {
+            "contactLensImportEnabled": "true",
+            "postcallRedactedRecordingImportEnabled": "true",
+            "DialedNumber": "$.SystemEndpoint.Address",
+            "postcallCTRImportEnabled": "true"
+          },
+          "TargetContact": "Current"
+        },
+        "Identifier": "442c00cc-30c6-48df-922d-9aab60c73eaf",
+        "Type": "UpdateContactAttributes",
+        "Transitions": {
+          "NextAction": "58bcceb9-ca11-46ce-bdc8-08df6875b4fb",
+          "Errors": [
+            {
+              "NextAction": "58bcceb9-ca11-46ce-bdc8-08df6875b4fb",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "ContactFlowId": ""
+        },
+        "Identifier": "58bcceb9-ca11-46ce-bdc8-08df6875b4fb",
+        "Type": "TransferToFlow",
+        "Transitions": {
+          "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+          "Errors": [
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "QueueId": "$.Attributes.QueueARN"
+        },
+        "Identifier": "4cb34865-c948-4208-80e8-dc525d121435",
+        "Type": "UpdateContactTargetQueue",
+        "Transitions": {
+          "NextAction": "9e9d0409-c430-4f37-95a2-6d9ecc755971",
+          "Errors": [
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "Text": "Please stand by as we forward your call to the next available agent."
+        },
+        "Identifier": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+        "Type": "MessageParticipant",
+        "Transitions": {
+          "NextAction": "5f795e10-e227-4fb0-a380-be6860177bca",
+          "Errors": [
+            {
+              "NextAction": "5f795e10-e227-4fb0-a380-be6860177bca",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "QueueId": "$.Attributes.DefaultQueue"
+        },
+        "Identifier": "1ddbe9eb-3845-4d99-84b2-25e0be7fd172",
+        "Type": "UpdateContactTargetQueue",
+        "Transitions": {
+          "NextAction": "9e9d0409-c430-4f37-95a2-6d9ecc755971",
+          "Errors": [
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "Text": "$.Attributes.Greeting"
+        },
+        "Identifier": "78a2c397-b3b3-48eb-99dc-b0e77271d6b3",
+        "Type": "MessageParticipant",
+        "Transitions": {
+          "NextAction": "9ea6d0d2-82eb-480f-8dc8-effbcd5a8805"
+        }
+      },
+      {
+        "Parameters": {
+          "Attributes": {
+            "QueueName": "$.Lex.SessionAttributes.agentQueue",
+            "QueueARN": "$.Lex.SessionAttributes.QueueARN",
+            "DialedNumber": "$.SystemEndpoint.Address"
+          },
+          "TargetContact": "Current"
+        },
+        "Identifier": "f6005149-232d-497a-b3dc-be680b8c43c5",
+        "Type": "UpdateContactAttributes",
+        "Transitions": {
+          "NextAction": "4cb34865-c948-4208-80e8-dc525d121435",
+          "Errors": [
+            {
+              "NextAction": "6b495c89-77d4-4072-8ed4-c914412f4fea",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "LoopCount": "3"
+        },
+        "Identifier": "a22b12b8-e762-42cf-88e7-f888c6f36ca6",
+        "Type": "Loop",
+        "Transitions": {
+          "NextAction": "908f31dd-3beb-4ac8-91ff-4246176ec34b",
+          "Conditions": [
+            {
+              "NextAction": "9ea6d0d2-82eb-480f-8dc8-effbcd5a8805",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "ContinueLooping"
+                ]
+              }
+            },
+            {
+              "NextAction": "908f31dd-3beb-4ac8-91ff-4246176ec34b",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "DoneLooping"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "ComparisonValue": "$.Attributes.SupportedOptionsCount"
+        },
+        "Identifier": "9ea6d0d2-82eb-480f-8dc8-effbcd5a8805",
+        "Type": "Compare",
+        "Transitions": {
+          "NextAction": "18641d20-f8e7-4339-92eb-987b40267596",
+          "Conditions": [
+            {
+              "NextAction": "1ddbe9eb-3845-4d99-84b2-25e0be7fd172",
+              "Condition": {
+                "Operator": "Equals",
+                "Operands": [
+                  "1"
+                ]
+              }
+            }
+          ],
+          "Errors": [
+            {
+              "NextAction": "18641d20-f8e7-4339-92eb-987b40267596",
+              "ErrorType": "NoMatchingCondition"
+            }
+          ]
+        }
+      },
+      {
+        "Parameters": {
+          "SSML": "$.Attributes.SupportedPrograms",
+          "LexBot": {
+            "Name": "IncomingCallRouter",
+            "Region": "us-east-1",
+            "Alias": "$LATEST"
+          },
+          "LexSessionAttributes": {
+            "CustomerSupport": "$.Attributes.CustomerSupport",
+            "InstanceID": "$.InstanceARN",
+            "Corporate": "$.Attributes.Corporate",
+            "VehicleRegistration": "$.Attributes.VehicleRegistration",
+            "SupportedPrograms": "$.Attributes.SupportedPrograms",
+            "DialedNumber": "$.SystemEndpoint.Address",
+            "Unemployment": "$.Attributes.Unemployment",
+            "ServicesList": "$.Attributes.ServicesList",
+            "Billing": "$.Attributes.Billing",
+            "HousingAssistance": "$.Attributes.HousingAssistance",
+            "DriversLicense": "$.Attributes.DriversLicense",
+            "Collections": "$.Attributes.Collections",
+            "Military": "$.Attributes.Military"
+          }
+        },
+        "Identifier": "18641d20-f8e7-4339-92eb-987b40267596",
+        "Type": "ConnectParticipantWithLexBot",
+        "Transitions": {
+          "NextAction": "a22b12b8-e762-42cf-88e7-f888c6f36ca6",
+          "Errors": [
+            {
+              "NextAction": "f6005149-232d-497a-b3dc-be680b8c43c5",
+              "ErrorType": "NoMatchingCondition"
+            },
+            {
+              "NextAction": "a22b12b8-e762-42cf-88e7-f888c6f36ca6",
+              "ErrorType": "NoMatchingError"
+            }
+          ]
+        }
+      }
+    ]
+  }
